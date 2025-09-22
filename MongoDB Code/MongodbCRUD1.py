@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 
 # Connection string (replace with your own credentials)
-connection_string ="mongodb+srv://Bhagyashri:Bhagyashri%40123@bhagyashri.6fwpeqg.mongodb.net/mydatabase?retryWrites=true&w=majority"
+connection_string =""
 
 # Create a client and connect to MongoDB
 client = MongoClient(connection_string)
@@ -62,3 +62,4 @@ if __name__ == "__main__":
     # Final list of users
     print("\nUsers after deletion:")
     find_users()
+
