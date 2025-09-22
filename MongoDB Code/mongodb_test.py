@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 
 # Correct connection string
-client = MongoClient("mongodb+srv://Bhagyashri:Bhagyashri%40123@bhagyashri.6fwpeqg.mongodb.net/mydatabase?retryWrites=true&w=majority")
+client = MongoClient("")
 
 db = client['mydatabase']  # database name
 collection = db['mycollection']  # collection name
@@ -14,3 +14,4 @@ for doc in collection.find():
     print(doc)
 
     
+
