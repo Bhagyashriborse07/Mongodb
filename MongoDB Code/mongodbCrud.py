@@ -3,14 +3,12 @@ from pymongo import MongoClient
 # -----------------------------
 # Step 1: Connect to MongoDB
 # -----------------------------
-client = MongoClient(
-    "mongodb+srv://Bhagyashri:Bhagyashri%40123@bhagyashri.6fwpeqg.mongodb.net/mydatabase?retryWrites=true&w=majority"
-)
+client = MongoClient("")
 
-# Access the database
+
 db = client['mydatabase']
 
-# Access the collection
+
 collection = db['mycollection']
 
 # -----------------------------
@@ -80,3 +78,4 @@ print("\nTotal documents in collection:", total_docs)
 print("\n--- Documents sorted by age descending ---")
 for doc in collection.find().sort("age", -1):
     print(doc)
+
