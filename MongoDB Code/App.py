@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 
 # Connect to MongoDB (replace connection string if using Atlas)
-client = MongoClient("mongodb://localhost:27017/")
+client = MongoClient("")
 
 # Access the database (it will be created if it doesn't exist)
 db = client["mydatabase"]
@@ -25,3 +25,4 @@ print("User age updated")
 # 4. Delete a document
 collection.delete_one({"name": "Bhagyashri"})
 print("User deleted")
+
