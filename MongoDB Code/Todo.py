@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 
 # MongoDB Atlas connection string
-client = MongoClient("mongodb+srv://Bhagyashri:Bhagyashri%40123@bhagyashri.6fwpeqg.mongodb.net/todoapp?retryWrites=true&w=majority")
+client = MongoClient("")
 
 # Access the database and collection
 db = client["todoapp"]
@@ -17,3 +17,4 @@ print("Task inserted with ID:", result.inserted_id)
 print("All tasks:")
 for task in tasks.find():
     print(task)
+
