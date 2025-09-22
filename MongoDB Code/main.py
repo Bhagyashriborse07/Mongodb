@@ -2,7 +2,7 @@ from pymongo import MongoClient
 
 
 if __name__ == '__main__' :
-    client = MongoClient("mongodb+srv://Bhagyashri:Bhagyashri%40123@bhagyashri.6fwpeqg.mongodb.net/mydatabase?retryWrites=true&w=majority")
+    client = MongoClient("")
 
     db = client['wisdom-academy']
 
@@ -15,4 +15,5 @@ if __name__ == '__main__' :
         "ssc_marks" :90
     }
 student_id = collection.insert_one(studentInfo) . inserted_id
+
 print(f"Student with id {student_id}  has been created")
